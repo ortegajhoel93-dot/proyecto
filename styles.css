@@ -1,0 +1,65 @@
+/* Estilo del título principal */
+.mis-productos {
+    font-weight: lighter;
+    text-align: center;
+    margin: 10px 0 30px 0;
+    color: red;
+}
+
+/* Contenedor principal que organiza los productos en 2 filas y 2 columnas */
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center; 
+    align-items: start;     
+    column-gap: 30px;       
+    row-gap: 35px;          
+    padding: 20px;
+    max-width: 800px;    
+    margin: 0 auto;   
+}
+
+/* Tarjeta individual de cada producto */
+.product-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;    
+    width: 200px;
+    text-decoration: none; 
+    color: black;
+}
+
+/* Ajustes de la imagen */
+.product-box img {
+    width: 300px;
+    height: 250px;
+    display: block;
+    margin-bottom: 12px;    
+    border-radius: 4px;     
+}
+
+/* Bloque contenedor de la información del producto */
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* Título del modelo de producto */
+.product-info h3 {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+
+/* Estilo del precio */
+.product-info .price {
+    display: block;
+    margin: 4px 0;
+    font-size: 1rem;
+    color: #333;
+}
